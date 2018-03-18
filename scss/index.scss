@@ -14,7 +14,7 @@ p {
 }
 
 body {
-    font-family: "楷体";
+    font-family: "宋体";
     background: #f4f4f4;
 }
 
@@ -1483,12 +1483,14 @@ header {
                         height: 50px;
                         padding: 35px 0 0 40px;
                         p:first-of-type{
+                            color: #666;
                             height: 30px;
                             font-size: 16px;
                             line-height: 30px;
                             overflow: hidden;
                         }
                         p:last-of-type{
+                            color: $color5;
                             height: 20px;
                             font-size: 12px;
                             line-height: 20px;
@@ -1519,10 +1521,12 @@ header {
                         height: 32px;
                         line-height: 32px;
                         span{
+                            color:$color5;
                             float: left;
                             font-size: 12px;
                         }
                         >a>span{
+                            color: #666;
                             font-size: 16px;
                         }
                     }
@@ -1552,6 +1556,329 @@ header {
             >p{
                 color: #ff5000;
             }
+        }
+    }
+}
+
+//边框混合器
+@mixin biankuang{
+    transition: all 0.5s linear;
+    border: 1px solid transparent;
+    border-top: 1px solid $color1;
+    border-right: 1px solid $color1;
+    border-bottom: 1px solid #fff;
+    &:hover{
+        border: 1px solid $color2;
+    }
+}
+
+//实惠专业户
+.shihui{
+    width: $width;
+    margin: 10px auto;
+    background: #fff;
+    .taobao_title1{
+            >span{
+                border-color: #31ba98;
+            }
+            >p{
+                color: #31ba98;
+            }
+        }
+    .shihui_content{
+        overflow: hidden;
+        width: 100%;
+        .shihui_box{
+            @include biankuang;
+            width: 216px;
+            padding-left: 20px;
+            float: left;
+            >p:first-of-type{
+                height: 26px;
+                padding-top: 24px;
+                >a{
+                    float: left;
+                    font-size: 16px;
+                    color: #666;
+                    line-height: 26px;
+                    &:hover{
+                        color: $color2;
+                    }
+                }
+            }
+            >div{
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: flex-start;
+                width: 100%;
+                >a{
+                    display: block;
+                    width: 120px;
+                    height: 120px;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+                >.shihui_box_right{
+                    flex: 1;
+                    padding-left: 10px;
+                    >p:first-of-type{
+                        width: 100%;
+                        overflow: hidden;
+                        height: 24px;
+                        line-height: 24px;
+                        font-size: 16px;
+                        margin-top: 22px;
+                    }
+                    >p:last-of-type{
+                        width: 100%;
+                        overflow: hidden;
+                        height: 22px;
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                    >a{
+                        display: block;
+                        width: 72px;
+                        height: 22px;
+                        font-size: 12px;
+                        line-height: 22px;
+                        text-align: center;
+                        color: $color2;
+                        border: 1px solid $color2;
+                        border-radius: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//热卖单品
+.danpin{
+    width: $width;
+    margin: 0 auto;
+    background: #fff;
+    .taobao_title1{
+        >span{
+            border-color: #ff242d;
+        }
+        >p{
+            color: #ff242d;
+        }
+    }
+    >p{
+        padding-bottom: 20px;
+        padding-left: 10px;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        >a{
+            color: #666;
+            font-size: 12px;
+            padding-left: 10px;
+        }
+    }
+    .danpin_content{
+        width: 100%;
+        .content_top{
+            width: 100%;
+            overflow: hidden;
+            >.danpin_box{
+                @include biankuang;
+                float: left;
+                display: block;
+                width: 196px;
+                padding: 20px;
+                >img{
+                    width: 197px;
+                    height: 197px;
+                }
+                p:nth-of-type(1){
+                    height: 40px;
+                    width: 100%;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #333;
+                    overflow: hidden;
+                    margin: 8px 0;
+                }
+                p:nth-of-type(2){
+                    height: 18px;
+                    width: 100%;
+                    line-height: 18px;
+                    font-size: 12px;
+                    color: $color5;
+                    >span{
+                        float: left;
+                        margin-right: 10px;
+                        margin-bottom: 17px;
+                    }
+                }
+                p:nth-of-type(3){
+                    height: 22px;
+                    width: 100%;
+                    line-height: 22px;
+                    font-size: 20px;
+                    color: $color2;
+                    overflow: hidden;
+                    >span{
+                        font-family: "微软雅黑";
+                        float: left;
+                        >b{
+                            font-size: 12px;
+                        }
+                        &:last-of-type{
+                            float: right;
+                            font-size: 12px;
+                            color: $color5;
+                        }
+                    }
+                }
+            }
+        }
+        .content_bottom{
+            border-top: 1px solid $color1;
+            display: flex;
+            padding: 20px 18px;
+            justify-content: space-between;
+            >a{
+                border: 2px solid #fff;
+                width: 375px;
+                height: 130px;
+                &:hover{
+                    border: 2px solid $color2;
+                }
+                >img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+//猜你喜欢
+.guess{
+    width: $width;
+    margin: 10px auto;
+    background: #fff;
+    .taobao_title1{
+        >span{
+            border-color: #ff9f00;
+        }
+        >p{
+            color: #ff9f00;
+        }
+    }
+    .guess_content{
+        width: 100%;
+        overflow: hidden;
+        .guess_box{
+            @include biankuang;
+            position: relative;
+            float: left;
+            width: 196px;
+            padding: 20px 20px 0px;
+            >a:first-of-type{
+                display: block;
+                width: 100%;
+                height: 197px;
+                background: #4F4F4F;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    opacity: .9;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+            >p:nth-of-type(1){
+                height: 44px;
+                line-height: 22px;
+                font-size: 14px;
+                overflow: hidden;
+                margin-top:7px ;
+                
+            }
+            >p:nth-of-type(2){
+                height: 24px;
+                color: $color2;
+                line-height: 24px;
+                font-size: 20px;
+                margin-top:22px ;
+                margin-bottom: 20px;
+                font-family: "微软雅黑";
+                >span{
+                    font-size: 12px;
+                }
+            }
+            >a:nth-of-type(2){
+                position: absolute;
+                display: block;
+                width: 236px;
+                height: 82px;
+                left: 0px;
+                bottom: 0;
+                background: $color2;
+                color: #fff;
+                display: none;
+                >p:first-of-type{
+                    width: 120px;
+                    height: 32px;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 32px;
+                    margin: 15px auto 0;
+                    border-bottom: 1px solid #fff;
+                }
+                >p:last-of-type{
+                    margin-top: 5px;
+                    height: 22px;
+                    font-size: 12px;
+                    text-align: center;
+                    
+                }
+            }
+            &:hover{
+                >a:nth-of-type(2){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+//侧边导航
+.nav_fixed{
+    width: 50px;
+    //display: none;
+    position: fixed;
+    top: 75px;
+    right: 50%;
+    margin-right: -655px;
+    >a{
+        display: block;
+        width: 34px;
+        height: 40px;
+        background: #fff;
+        padding: 10px 8px 0;
+        >span{
+            display: block;
+            font-size: 13px;
+            line-height: 17px;
+            width: 34px;
+            height: 39px;
+            text-align: center;
+            border-bottom: 1px solid $color5;
+        }
+        &:hover,&.hover{
+            color: #fff;
+            background: $color2;
+            font-weight: 700;
         }
     }
 }

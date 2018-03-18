@@ -7,7 +7,7 @@ p {
   margin: 0; }
 
 body {
-  font-family: "楷体";
+  font-family: "宋体";
   background: #f4f4f4; }
 
 a {
@@ -1127,11 +1127,13 @@ header {
             height: 50px;
             padding: 35px 0 0 40px; }
             .pin_te .pin .pin_te_box .pin_te_left .div2 .div2_left p:first-of-type, .pin_te .te .pin_te_box .pin_te_left .div2 .div2_left p:first-of-type {
+              color: #666;
               height: 30px;
               font-size: 16px;
               line-height: 30px;
               overflow: hidden; }
             .pin_te .pin .pin_te_box .pin_te_left .div2 .div2_left p:last-of-type, .pin_te .te .pin_te_box .pin_te_left .div2 .div2_left p:last-of-type {
+              color: #999;
               height: 20px;
               font-size: 12px;
               line-height: 20px;
@@ -1157,9 +1159,11 @@ header {
             height: 32px;
             line-height: 32px; }
             .pin_te .pin .pin_te_box .pin_te_right > div > p:first-of-type span, .pin_te .te .pin_te_box .pin_te_right > div > p:first-of-type span {
+              color: #999;
               float: left;
               font-size: 12px; }
             .pin_te .pin .pin_te_box .pin_te_right > div > p:first-of-type > a > span, .pin_te .te .pin_te_box .pin_te_right > div > p:first-of-type > a > span {
+              color: #666;
               font-size: 16px; }
           .pin_te .pin .pin_te_box .pin_te_right > div > p:last-of-type, .pin_te .te .pin_te_box .pin_te_right > div > p:last-of-type {
             margin-top: 24px;
@@ -1175,5 +1179,265 @@ header {
     border-color: #ff5000; }
   .pin_te .te .taobao_title1 > p {
     color: #ff5000; }
+
+.shihui {
+  width: 1190px;
+  margin: 10px auto;
+  background: #fff; }
+  .shihui .taobao_title1 > span {
+    border-color: #31ba98; }
+  .shihui .taobao_title1 > p {
+    color: #31ba98; }
+  .shihui .shihui_content {
+    overflow: hidden;
+    width: 100%; }
+    .shihui .shihui_content .shihui_box {
+      transition: all 0.5s linear;
+      border: 1px solid transparent;
+      border-top: 1px solid #F5F5F5;
+      border-right: 1px solid #F5F5F5;
+      border-bottom: 1px solid #fff;
+      width: 216px;
+      padding-left: 20px;
+      float: left; }
+      .shihui .shihui_content .shihui_box:hover {
+        border: 1px solid #FC4200; }
+      .shihui .shihui_content .shihui_box > p:first-of-type {
+        height: 26px;
+        padding-top: 24px; }
+        .shihui .shihui_content .shihui_box > p:first-of-type > a {
+          float: left;
+          font-size: 16px;
+          color: #666;
+          line-height: 26px; }
+          .shihui .shihui_content .shihui_box > p:first-of-type > a:hover {
+            color: #FC4200; }
+      .shihui .shihui_content .shihui_box > div {
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        width: 100%; }
+        .shihui .shihui_content .shihui_box > div > a {
+          display: block;
+          width: 120px;
+          height: 120px; }
+          .shihui .shihui_content .shihui_box > div > a > img {
+            width: 100%;
+            height: 100%; }
+        .shihui .shihui_content .shihui_box > div > .shihui_box_right {
+          flex: 1;
+          padding-left: 10px; }
+          .shihui .shihui_content .shihui_box > div > .shihui_box_right > p:first-of-type {
+            width: 100%;
+            overflow: hidden;
+            height: 24px;
+            line-height: 24px;
+            font-size: 16px;
+            margin-top: 22px; }
+          .shihui .shihui_content .shihui_box > div > .shihui_box_right > p:last-of-type {
+            width: 100%;
+            overflow: hidden;
+            height: 22px;
+            font-size: 14px;
+            line-height: 14px; }
+          .shihui .shihui_content .shihui_box > div > .shihui_box_right > a {
+            display: block;
+            width: 72px;
+            height: 22px;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: center;
+            color: #FC4200;
+            border: 1px solid #FC4200;
+            border-radius: 11px; }
+
+.danpin {
+  width: 1190px;
+  margin: 0 auto;
+  background: #fff; }
+  .danpin .taobao_title1 > span {
+    border-color: #ff242d; }
+  .danpin .taobao_title1 > p {
+    color: #ff242d; }
+  .danpin > p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden; }
+    .danpin > p > a {
+      color: #666;
+      font-size: 12px;
+      padding-left: 10px; }
+  .danpin .danpin_content {
+    width: 100%; }
+    .danpin .danpin_content .content_top {
+      width: 100%;
+      overflow: hidden; }
+      .danpin .danpin_content .content_top > .danpin_box {
+        transition: all 0.5s linear;
+        border: 1px solid transparent;
+        border-top: 1px solid #F5F5F5;
+        border-right: 1px solid #F5F5F5;
+        border-bottom: 1px solid #fff;
+        float: left;
+        display: block;
+        width: 196px;
+        padding: 20px; }
+        .danpin .danpin_content .content_top > .danpin_box:hover {
+          border: 1px solid #FC4200; }
+        .danpin .danpin_content .content_top > .danpin_box > img {
+          width: 197px;
+          height: 197px; }
+        .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(1) {
+          height: 40px;
+          width: 100%;
+          line-height: 20px;
+          font-size: 14px;
+          color: #333;
+          overflow: hidden;
+          margin: 8px 0; }
+        .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(2) {
+          height: 18px;
+          width: 100%;
+          line-height: 18px;
+          font-size: 12px;
+          color: #999; }
+          .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(2) > span {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 17px; }
+        .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(3) {
+          height: 22px;
+          width: 100%;
+          line-height: 22px;
+          font-size: 20px;
+          color: #FC4200;
+          overflow: hidden; }
+          .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(3) > span {
+            font-family: "微软雅黑";
+            float: left; }
+            .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(3) > span > b {
+              font-size: 12px; }
+            .danpin .danpin_content .content_top > .danpin_box p:nth-of-type(3) > span:last-of-type {
+              float: right;
+              font-size: 12px;
+              color: #999; }
+    .danpin .danpin_content .content_bottom {
+      border-top: 1px solid #F5F5F5;
+      display: flex;
+      padding: 20px 18px;
+      justify-content: space-between; }
+      .danpin .danpin_content .content_bottom > a {
+        border: 2px solid #fff;
+        width: 375px;
+        height: 130px; }
+        .danpin .danpin_content .content_bottom > a:hover {
+          border: 2px solid #FC4200; }
+        .danpin .danpin_content .content_bottom > a > img {
+          width: 100%;
+          height: 100%; }
+
+.guess {
+  width: 1190px;
+  margin: 10px auto;
+  background: #fff; }
+  .guess .taobao_title1 > span {
+    border-color: #ff9f00; }
+  .guess .taobao_title1 > p {
+    color: #ff9f00; }
+  .guess .guess_content {
+    width: 100%;
+    overflow: hidden; }
+    .guess .guess_content .guess_box {
+      transition: all 0.5s linear;
+      border: 1px solid transparent;
+      border-top: 1px solid #F5F5F5;
+      border-right: 1px solid #F5F5F5;
+      border-bottom: 1px solid #fff;
+      position: relative;
+      float: left;
+      width: 196px;
+      padding: 20px 20px 0px; }
+      .guess .guess_content .guess_box:hover {
+        border: 1px solid #FC4200; }
+      .guess .guess_content .guess_box > a:first-of-type {
+        display: block;
+        width: 100%;
+        height: 197px;
+        background: #4F4F4F; }
+        .guess .guess_content .guess_box > a:first-of-type > img {
+          width: 100%;
+          height: 100%;
+          opacity: .9; }
+          .guess .guess_content .guess_box > a:first-of-type > img:hover {
+            opacity: .8; }
+      .guess .guess_content .guess_box > p:nth-of-type(1) {
+        height: 44px;
+        line-height: 22px;
+        font-size: 14px;
+        overflow: hidden;
+        margin-top: 7px; }
+      .guess .guess_content .guess_box > p:nth-of-type(2) {
+        height: 24px;
+        color: #FC4200;
+        line-height: 24px;
+        font-size: 20px;
+        margin-top: 22px;
+        margin-bottom: 20px;
+        font-family: "微软雅黑"; }
+        .guess .guess_content .guess_box > p:nth-of-type(2) > span {
+          font-size: 12px; }
+      .guess .guess_content .guess_box > a:nth-of-type(2) {
+        position: absolute;
+        display: block;
+        width: 236px;
+        height: 82px;
+        left: 0px;
+        bottom: 0;
+        background: #FC4200;
+        color: #fff;
+        display: none; }
+        .guess .guess_content .guess_box > a:nth-of-type(2) > p:first-of-type {
+          width: 120px;
+          height: 32px;
+          font-size: 18px;
+          text-align: center;
+          line-height: 32px;
+          margin: 15px auto 0;
+          border-bottom: 1px solid #fff; }
+        .guess .guess_content .guess_box > a:nth-of-type(2) > p:last-of-type {
+          margin-top: 5px;
+          height: 22px;
+          font-size: 12px;
+          text-align: center; }
+      .guess .guess_content .guess_box:hover > a:nth-of-type(2) {
+        display: block; }
+
+.nav_fixed {
+  width: 50px;
+  position: fixed;
+  top: 75px;
+  right: 50%;
+  margin-right: -655px; }
+  .nav_fixed > a {
+    display: block;
+    width: 34px;
+    height: 40px;
+    background: #fff;
+    padding: 10px 8px 0; }
+    .nav_fixed > a > span {
+      display: block;
+      font-size: 13px;
+      line-height: 17px;
+      width: 34px;
+      height: 39px;
+      text-align: center;
+      border-bottom: 1px solid #999; }
+    .nav_fixed > a:hover, .nav_fixed > a.hover {
+      color: #fff;
+      background: #FC4200;
+      font-weight: 700; }
 
 /*# sourceMappingURL=index.css.map */

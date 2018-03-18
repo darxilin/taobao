@@ -97,6 +97,7 @@ $(function() {
 		$(".ad_bottom").html(str);
 	});
 	//淘宝头条数据加载
+	
 
 	//公告数据加载
 	$.getJSON("https://tce.alicdn.com/api/data.htm?ids=1016988&callback=?", function(data) {
@@ -243,5 +244,140 @@ $(function() {
 		});
 	}
 	baoliao();
+	
+	
+	//猜你喜欢数据加载
+	function guess(){
+		get("https://tui.taobao.com/recommend?appid=2493&_ksTS=1521359149216_3155&callback=callback_guess");
+		for(var i=0;i<74;i++){
+			$(".guess_box").first().clone().appendTo(".guess_content");
+		}
+	}
+	guess();
+	
+	
+	function pin(url,div){
+		var result = 0;
+		if(div == ".pin"){
+			result = 1952108;
+		}else if( div == ".te"){
+			result = 1952107;
+		}
+		$.getJSON(url,function(data){
+			var arr = data.result[result].result[0].item;
+			$(div).find(".pin_te_box>.pin_te_left").find(".div1").first().find("img").first().attr("src",arr[0].img1);
+			$(div+">.pin_te_box>.pin_te_left>a").each(function(i){
+				$(this).attr("href",arr[i+1].targetUrl).find("p").first().text(arr[i+1].title).next().text(arr[i+1].subTitle).end().end().end().find("img").first().attr("src",arr[i+1].img1);
+			});
+			$(div+">.pin_te_box>.pin_te_right>div").each(function(i){
+				$(this).find("p").first().find("a").first().attr("href",arr[i+4].targetUrl).find("span").first().text(arr[i+4].title).end().end().next().text(arr[i+4].subTitle).parent().next().find("a").first().attr("href",arr[i+4].targetUrl).children().first().attr("src",arr[i+4].img1).parent().next().attr("href",arr[i+4].targetUrl).children().first().attr("src",arr[i+4].img2);
+			});
+			
+			
+		});
+	}
+	//品质生活家数据加载
+	pin("https://tce.taobao.com/api/mget.htm?callback=?&tce_sid=1952108&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR",".pin");
+	//特色玩味控数据加载
+	pin("https://tce.taobao.com/api/mget.htm?callback=?&tce_sid=1952107&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR",".te");
+	
+	//实惠专业户数据加载
+	function shihui(){
+		$.getJSON("https://tce.taobao.com/api/mget.htm?callback=?&tce_sid=1952106&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR",function(data){
+			var arr = data.result[1952106].result[0].item;
+			$(".shihui_box").each(function(i){
+				$(this).find("a").each(function(j){
+					$(this).attr("href",arr[i].targetUrl);
+				}).first().text(arr[i].bizName).end().eq(1).children().first().attr("src",arr[i].img1).end().end().end().eq(2).text(arr[i].point).prev().text(arr[i].subTitle).prev().text(arr[i].title);
+			});
+		});
+	}
+	shihui();
+	
+	
+	//热卖单品数据加载
+	function danpin(){
+		$.getJSON("https://textlink.simba.taobao.com/lk?_ksTS=1521018189664_5801&callback=?&pid=619362_1007",function(data){
+			$(".danpin>p").html(function(){
+				var str = "";
+				for(var i=0;i<data.data.length;i++){
+					str += `<a href='${data.data[i][1]}'>${data.data[i][0]}</a>`;
+				}
+				return str;
+			});
+		});
+		/*$.getJSON("https://tns.simba.taobao.com/?name=tcmad&st_type=5_8&o=m&count=10&pid=430406_1007&_ksTS=1521018189655_5773&p4p=js",function(data){
+			var arr = data.data[0].addList;
+			console.log(arr);
+			$(".danpin_box").each(function(i){
+				$(this).children().first().attr("src",arr[i].TBGOODSLINK).next().text(arr[i].TITLE).next().next().children().first().children().first().text(arr[i].PROMOTEPRICE).parent().next().text("月销"+arr[i].SELL+"笔");
+			});
+		});*/
+		
+		get("https://tns.simba.taobao.com/?name=tcmad&st_type=5_8&o=m&count=10&pid=430406_1007&_ksTS=1521018189655_5773&p4p=callback_danpin");
+	}
+	danpin();
+	
+	//侧边导航
+	function floor(){
+		var $NavList = $(".floor");
+				var $ConList = $("#content>ul>li");
+				var flag = true;
+				if($(window).scrollTop()>(1000-300)){
+						$("#floorNav").fadeIn();
+					}else{
+						$("#floorNav").fadeOut();
+					}
+				$(document).scroll(function(){
+					if(flag){
+					if($(window).scrollTop()>(1000-300)){
+						$("#floorNav").fadeIn();
+					}else{
+						$("#floorNav").fadeOut();
+					}
+					
+					$ConList.each(function(index){
+						//console.log($(this).offset().top);
+						if($(window).scrollTop()>$(this).offset().top-300){
+							$NavList.eq(index).addClass("hover").siblings().removeClass("hover");
+						}
+					})
+					}
+					$("#floorNav>ul>li:not(:last)").click(function(){
+						flag = false;
+						var index = $(this).index();
+						$("body,html").stop().animate({"scrollTop":$ConList.eq(index).offset().top},function(){
+							flag = true;
+						});
+					})
+					$("#floorNav>ul>li:last").click(function(){
+						$("body,html").stop().animate({"scrollTop":0});
+					})
+				});
+	}
+	floor();
+
+
+
 
 });
+
+//热卖单品回调函数
+function callback_danpin(data){
+	var arr = data.data[0].adList;
+			$(".danpin_box").each(function(i){
+				$(this).children().first().attr("src",arr[i].TBGOODSLINK).next().text(arr[i].TITLE).next().next().children().first().html("<b>￥</b>"+arr[i].PROMOTEPRICE).next().text("月销"+arr[i].SELL+"笔");
+			});
+}
+			
+//猜你喜欢回调函数
+function callback_guess(data){
+			console.log(data);
+			$(".guess_content").html(function(){
+				var str = "";
+				for(var i=0;i<data.result.length;i++){
+					str += `<div class='guess_box'><a href='${data.result[i].url}'><img src='${data.result[i].pic}'/></a><p>${data.result[i].itemName}</p><p><span>￥</span>${data.result[i].promotionPrice}</p><a href='${data.result[i].detailUrl}'><p>找相似</p><p>发现更多相似的宝贝</p></a></div>`;
+				}
+				return str;
+			});
+		}

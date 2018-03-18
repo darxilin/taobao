@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
+
 	<body>
 		<a href="">
 			<p class="_title">
@@ -26,6 +28,28 @@
 				</div>
 			</div>
 		</a>
-		
+		<script>
+			function get(url) {
+				//var callback = fn;
+				var oScript = document.createElement("script");
+				oScript.src = url;
+				document.body.appendChild(oScript);
+				document.body.removeChild(oScript);
+
+			}
+
+			function callback_guess(data) {
+				console.log(data);
+				$(".guess_content").html(function() {
+					var str = "";
+					for(var i = 0; i < data.result.length; i++) {
+						str += `<div class='guess_box'><a href='${data.result[i].url}'><img src='${data.result[i].pic}'/></a><p>${data.result[i].itemName}</p><p><span>￥</span>${data.result[i].promotionPrice}</p><a href='${data.result[i].detailUrl}'><p>找相似</p><p>发现更多相似的宝贝</p></a></div>`;
+					}
+					return str;
+				});
+			}
+			get("https://tui.taobao.com/recommend?appid=2493&_ksTS=1521359149216_3155&callback=callback_guess");
+		</script>
 	</body>
+
 </html>

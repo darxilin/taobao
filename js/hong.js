@@ -5,6 +5,17 @@ function getJson(url, fn) {
 	});
 }
 
+
+function get(url){
+	//var callback = fn;
+	var oScript = document.createElement("script");
+	oScript.src = url;
+	document.body.appendChild(oScript);
+	document.body.removeChild(oScript);
+
+	
+}
+
 //搜索建议
 function search() {
 	if($("#search_content").val() != "") {
@@ -56,3 +67,4 @@ function show(data, json, data1) {
 		return str;
 	});
 }
+
