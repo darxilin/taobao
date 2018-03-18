@@ -1,95 +1,516 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title>淘宝网 - 淘！我喜欢</title>
-		<link rel="stylesheet" type="text/css" href=""/>
-		<style>
-			body,ul,li{
-				padding: 0;
-				margin: 0;
-			}
-			a{
-				text-decoration: none;
-			}
-			li{
-				list-style: none;
-			}
-			header{
-				background: #f5f5f5;
-			}
-			.header_box{
-				width: 1190px;
-				overflow: hidden;
-				margin: 0 auto;
-			}
-			.header_box>ul{
-				overflow: hidden;
-				float: right;
-				
-			}
-			.header_box>ul>li{
-				float: left;
-				padding: 5px;
-				height: 25px;
-				line-height: 25px;
-				font-size: 12px;
-				color: #6c6c6c;
-			}
-			.header_box>ul>li>a{
-				font-size: 12px;
-				color: #6c6c6c;
-			}
-		</style>
+		<title></title>
 	</head>
+	<link rel="stylesheet" type="text/css" href="css/ft-carousel.css"/>
 	<body>
-		<header>
-			<div class="header_box">
-			<div class="header_left">
-				
+		<!--header-->
+		<header></header>
+		<!--搜索框-->
+		<div class="search_wrap">
+		<div class="search">
+			<img src="img/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png" />
+			<div class="search_box">
+				<div class="search_type">
+					<span class="search_baobei search_choose">宝贝</span>
+					<span class="search_tianmao">天猫</span>
+					<span class="search_dianpu">店铺</span>
+				</div>
+				<div class="search_search">
+					<div class="search_left">
+						<span class="search_icon"></span>
+						<input type="text" id="search_content" />
+						<span class="search_cam"></span>
+						<div class="search_result"></div>
+					</div>
+					<div class="search_btn">搜素</div>
+				</div>
+				<div class="search_hot">
+					<div class="keyword"></div>
+					<div class="keyword_more">
+						<a href="#">更多></a>
+					</div>
+				</div>
 			</div>
-			<ul class="header_right">
-				<li><a href="#">我的淘宝</a>ˇ
-					<ul>
-						<li><a href="#">已买到的宝贝</a></li>
-						<li><a href="#">我的足迹</a></li>
-					</ul>
-				</li>
-				<li><a href="#">购物车<b class="cart_num">0</b></a>ˇ
-					<ul>
-						<li></li>
-					</ul>
-				</li>
-				<li><a href="#">收藏夹</a>ˇ
-					<ul>
-						<li><a href="#">收藏的宝贝</a></li>
-						<li><a href="#">收藏的店铺</a></li>
-					</ul>
-				</li>
-				<li><a href="#">商品分类</a> |</li>
-				<li><a href="#">卖家中心</a>ˇ
-					<ul>
-						<li><a href="#">免费开店</a></li>
-						<li><a href="#">已卖出的宝贝</a></li>
-						<li><a href="#">出售中的宝贝</a></li>
-						<li><a href="#">卖家服务市场</a></li>
-						<li><a href="#">卖家培训中心</a></li>
-					</ul>
-				</li>
-				<li><a href="#">联系客服</a>ˇ
-					<ul>
-						<li><a href="#">消费者客服</a></li>
-						<li><a href="#">卖家客服</a></li>
-					</ul>
-				</li>
-				<li><a href="#">网站导航</a>ˇ
-					<ul>
-						
-					</ul>
-				</li>
-			</ul>
+			<div class="search_code">
+				手机淘宝
+				<img src="img/code.png" />
+				<p>×</p>
+			</div>
 		</div>
-		</header>
+		</div>
+
+		<!--导航栏-->
+		<div class="nav">
+			<div class="nav_box">
+				<ul>
+					<li>
+						<ul>
+							<li>
+								<a>主题市场</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>
+								<a href="#">天猫</a>
+							</li>
+							<li>
+								<a href="#">聚划算</a>
+							</li>
+							<li>
+								<a href="#">天猫超市</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>
+								<a href="#">淘抢购</a>
+							</li>
+							<li>
+								<a href="#">电器城</a>
+							</li>
+							<li>
+								<a href="#">司法拍卖</a>
+							</li>
+							<li>
+								<a href="#">中国质造</a>
+							</li>
+							<li>
+								<a href="#">兴农扶贫</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>
+								<a href="#">飞猪旅行</a>
+							</li>
+							<li>
+								<a href="#">智能生活</a>
+							</li>
+							<li>
+								<a href="#">苏宁易购</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--导航，轮播，个人等-->
+		<div class="taobao_first">
+			<!--第一部分左侧-->
+			<div class="taobao_first_left">
+				<!--第一部分左侧上部-->
+				<div class="taobao_first_left_top">
+					<!--菜单-->
+					<div class="caidan">
+
+					</div>
+					<!--轮播图-->
+					<div class="banner">
+						<!--上部轮播图-->
+						<div class="banner1">
+							<div class="ft-carousel" id="carousel_1">
+				<ul class="carousel-inner">
+					<li class="carousel-item">1</li>
+					<li class="carousel-item">2</li>
+					<li class="carousel-item">3</li>
+					<li class="carousel-item">4</li>
+					<li class="carousel-item">5</li>
+					<li class="carousel-item">6</li>
+					<li class="carousel-item">7</li>
+				</ul>
+			</div>
+						</div>
+						<!--下部轮播图-->
+						<div class="banner2">
+							<!--轮播图上方-->
+							<div class="banner2_top">
+								<img src="img/tianmao.png" />
+								<em>理想生活上天猫</em>
+								<strong class="banner2_num">
+									<b>1</b>/6
+								</strong>
+							</div>
+							<!--轮播图-->
+							<div class="banner2_bottom">
+								<div class="banner2_bottom_li">
+									
+								</div>
+								<div class="banner2_banner">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--广告-->
+					<div class="ad">
+						<div class="ad_top"></div>
+						<p>今日热卖</p>
+						<div class="ad_bottom"></div>
+					</div>
+				</div>
+				<!--第一部分左侧下部-->
+				<div class="taobao_first_left_bottom">
+					<div class="toutiao_title">
+						<p>让你的生活更有趣</p>
+					</div>
+					<!--中间内容-->
+					<div class="toutiao_content">
+						
+					</div>
+					<div class="more"><a href="#">更多></a></div>
+				</div>
+			</div>
+			<!--第一部分右侧-->
+			<div class="taobao_first_right">
+				<!--个人信息-->
+				<div class="person">
+					<div class="touxiang"><a href="#"><img src="img/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_50x50.jpg"/></a></div>
+					<div class="person_msg">Hi!你好</div>
+					<div class="person_msg1">
+						<a href="#"><span></span>领淘金币抵钱</a>
+						<a href="#"><span></span>会员俱乐部</a>
+					</div>
+					<div class="person_fun">
+						<a href="#">登录</a>
+						<a href="#">注册</a>
+						<a href="#">开店</a>
+					</div>
+				</div>
+				<!--举报专区-->
+				<div class="jubao">
+					<a href="#">网上有害信息举报专区</a>
+					<span></span>
+				</div>
+				<!--公告，规则，论坛等-->
+				<div class="gonggao">
+					
+				</div>
+				<!--功能板块-->
+				<div class="function">
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+					<a href="#">
+						<span></span>
+						<p>充话费</p>
+					</a>
+				</div>
+				<!--阿里APP-->
+				<div class="aliapp"></div>
+			</div>
+		</div>
+		<!--生活研究所-->
+		<div class="yanjiu">
+			<p class="taobao_title"><img src="img/TB1o60degoQMeJjy1XaXXcSsFXa-180-48.png" /><span>发现属于你的生活方式</span></p>
+		</div>
+		<!---->
+		<div class="hao_guang">
+		<!--有好货-->
+		<div class="haohuo">
+			<!--标题-->
+			<div class="taobao_title">
+				<img src="img/TB1tqpnegMPMeJjy1XcXXXpppXa-148-48.png" />
+				<p class="haohuo_code">
+					<span class="code"></span>
+					<div><img src="" /></div>
+				</p>
+				<span>与品质生活不期而遇</span>
+				<a class="haohuo_change">换一换</a>
+			</div>
+			<!--内容-->
+			<div class="haohuo_content"></div>
+		</div>
+		<!--爱逛街-->
+		<div class="guangjie">
+			<!--标题-->
+			<div class="taobao_title">
+				<img src="img/TB1UNX2bSFRMKJjy0FhXXX.xpXa-112-46.png" />
+				<span>献给聪明可爱的你</span>
+				<a >更多></a>
+			</div>
+			<!--内容-->
+			<div class="guangjie_content"></div>
+		</div>
+		</div>
+		<!--淘抢购-->
+		<div class="qianggou">
+			<div class="taobao_title">
+				<img src="img/TB1UfJnb3oQMeJjy0FpXXcTxpXa-160-44.png" />
+				<span>距结束<span>00</span>:<span>30</span>:<span>00</span></span>
+				<a >更多></a>
+				<span class="qianggou_change">换一换</span>
+			</div>
+			<div class="qianggou_content"></div>
+		</div>
+		
+		<!--每日好店和淘宝直播-->
+		<div class="dian_bo">
+			<!--淘宝好店-->
+			<div class="haodian">
+				<div class="taobao_title">
+					<img src="img/TB1_EXwb3oQMeJjy0FpXXcTxpXa-162-48.png" />
+				<span>发现深藏的好店</span>
+				<a >更多></a>
+				</div>
+				<div class="dian_bo_content"></div>
+			</div>
+			<!--淘宝直播-->
+			<div class="zhibo">
+				<div class="taobao_title">
+					<img src="img/TB1cmpCb3MPMeJjy1XdXXasrXXa-204-42.png" />
+				<span>你的爱豆直播等你哟！</span>
+				</div>
+				<div class="dian_bo_content"></div>
+			</div>
+		</div>
+		<!--时尚爆料王-->
+		<div class="baoliao">
+			<div class="baoliao_left">
+				<div class="taobao_title1">
+					<span></span>
+					<p>时尚爆料王</p>
+				</div>
+				<div class="baoliao_content">
+						<div class="baoliao_box">
+							<p>腔调</p>
+							<p>全球创意设计师平台</p>
+							<div class="img_box">
+								<a>
+									<img src=""/>
+								</a>
+								<a>
+									<img src=""/>
+								</a>
+							</div>
+						</div>
+						<div class="baoliao_box">
+							<p>腔调</p>
+							<p>全球创意设计师平台</p>
+							<div class="img_box">
+								<a>
+									<img src=""/>
+								</a>
+								<a>
+									<img src=""/>
+								</a>
+							</div>
+						</div>
+						<div class="baoliao_box">
+							<p>腔调</p>
+							<p>全球创意设计师平台</p>
+							<div class="img_box">
+								<a>
+									<img src=""/>
+								</a>
+								<a>
+									<img src=""/>
+								</a>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="baoliao_right">
+				<img src=""/>
+			</div>
+		</div>
+		<!--品质生活家和特色玩味控-->
+		<div class="pin_te">
+			<!--品质生活家-->
+			<div class="pin">
+				<div class="taobao_title1">
+					<span></span>
+					<p>品质生活家</p>
+				</div>
+				<div class="pin_te_box">
+					<div class="pin_te_left">
+						<div class="div1">
+							<div><img /></div>
+						</div>
+						<a class="div2">
+							<div class="div2_left">
+								<p>极有家</p>
+								<p>过我想要的生活</p>
+							</div>
+							<img />
+						</a>
+						<a class="div2">
+							<div class="div2_left">
+								<p>极有家</p>
+								<p>过我想要的生活</p>
+							</div>
+							<img />
+						</a>
+						<a class="div2">
+							<div class="div2_left">
+								<p>极有家</p>
+								<p>过我想要的生活</p>
+							</div>
+							<img />
+						</a>
+					</div>
+					<div class="pin_te_right">
+						<div>
+							<p>
+								<a><span>亲宝贝</span></a>
+								<span>享受育儿新方式</span>
+							</p>
+							<p>
+								<a><img /></a>
+								<a><img /></a>
+							</p>
+						</div>
+						<div>
+							<p>
+								<a><span>亲宝贝</span></a>
+								<span>享受育儿新方式</span>
+							</p>
+							<p>
+								<a><img /></a>
+								<a><img /></a>
+							</p>
+						</div>
+						<div>
+							<p>
+								<a><span>亲宝贝</span></a>
+								<span>享受育儿新方式</span>
+							</p>
+							<p>
+								<a><img /></a>
+								<a><img /></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--特色玩味控-->
+			<div class="te">
+				<div class="taobao_title1">
+					<span></span>
+					<p>特色玩味控</p>
+				</div>
+				<div class="pin_te_box">
+					<div class="pin_te_left">
+						<div class="div1">
+							<div><img /></div>
+						</div>
+						<a class="div2">
+							<div class="div2_left">
+								<p>极有家</p>
+								<p>过我想要的生活</p>
+							</div>
+							<img />
+						</a>
+						<a class="div2">
+							<div class="div2_left">
+								<p>极有家</p>
+								<p>过我想要的生活</p>
+							</div>
+							<img />
+						</a>
+						<a class="div2">
+							<div class="div2_left">
+								<p>极有家</p>
+								<p>过我想要的生活</p>
+							</div>
+							<img />
+						</a>
+					</div>
+					<div class="pin_te_right">
+						<div>
+							<p>
+								<a><span>亲宝贝</span></a>
+								<span>享受育儿新方式</span>
+							</p>
+							<p>
+								<a><img /></a>
+								<a><img /></a>
+							</p>
+						</div>
+						<div>
+							<p>
+								<a><span>亲宝贝</span></a>
+								<span>享受育儿新方式</span>
+							</p>
+							<p>
+								<a><img /></a>
+								<a><img /></a>
+							</p>
+						</div>
+						<div>
+							<p>
+								<a><span>亲宝贝</span></a>
+								<span>享受育儿新方式</span>
+							</p>
+							<p>
+								<a><img /></a>
+								<a><img /></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/ft-carousel.min.js"></script>
+		<script type="text/javascript" src="js/hong.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+			$(function() {
+				$("header").load("html/header.html");
+			});
+			$("#carousel_1").FtCarousel();
+		</script>
 	</body>
+
 </html>

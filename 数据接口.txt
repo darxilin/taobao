@@ -1,0 +1,26 @@
+1.网站导航  https://tce.alicdn.com/api/data.htm?callback=tce_175785&ids=175785
+2.侧边固定栏 https://tce.alicdn.com/api/data.htm?ids=1017579&callback=tce_fixedtool_callback
+3.搜索建议 https://suggest.taobao.com/sug?_ksTS=1520995865267_165&callback=jsonp166&area=shade_recommand&code=utf-8
+4.阿里APP https://tce.alicdn.com/api/mget.htm?callback=jsonpXctrl306&tce_sid=1947680,1947683&tce_vid=0,0&tid=,&tab=,&topic=,&count=,&env=online,online
+5.淘宝头条 https://headline.taobao.com/feed/homeFeed.do?_ksTS=1521016021321_366&callBack=jsonp367
+6.公告，规则 https://tce.alicdn.com/api/data.htm?ids=1016988&callback=tbhome_1016988
+7.生活研究所 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl410&tce_sid=1949464&tce_vid=2&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR&pageSize=6
+8.https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl423&tce_sid=1949463&tce_vid=2&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR&pageSize=6
+
+9.爱逛街 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl728&tce_sid=1952191&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+10.有好货 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl757&tce_sid=1947676&tce_vid=1&tid=&tab=&topic=&count=&env=online&startIndex=0&pageSize=6
+11.每日好店 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl3238&tce_sid=1947675&tce_vid=1&tid=&tab=&topic=&count=&env=online
+12.淘宝直播 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl3278&tce_sid=2316013&tce_vid=2&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+13.时尚爆料王 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl3373&tce_sid=1952103&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+14.菜单 https://tce.alicdn.com/api/data.htm?ids=222887%2C222890%2C222889%2C222886%2C222906%2C222898%2C222907%2C222885%2C222895%2C222878%2C222908%2C222879%2C222893%2C222896%2C222918%2C222917%2C222888%2C222902%2C222880%2C222913%2C222910%2C222882%2C222883%2C222921%2C222899%2C222905%2C222881%2C222911%2C222894%2C222920%2C222914%2C222877%2C222919%2C222915%2C222922%2C222884%2C222912%2C222892%2C222900%2C222923%2C222909%2C222897%2C222891%2C222903%2C222901%2C222904%2C222916%2C222924&callback=tbh_service_cat
+15.菜单 猜我喜欢 https://tui.taobao.com/recommend?_ksTS=1521016122970_3424&callback=jsonp3425&appid=2807
+16.品质生活家 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl3520&tce_sid=1952108&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+17.特色玩味控 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl3548&tce_sid=1952107&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+18.淘抢购 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl3614&tce_sid=1966462&tce_vid=0&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR&request=1
+19.实惠专业户 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl5732&tce_sid=1952106&tce_vid=1&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+20.热卖单品 https://tns.simba.taobao.com/?name=tcmad&st_type=5_8&o=m&count=10&pid=430406_1007&_ksTS=1521018189655_5773&p4p=jsonp5774
+21.热卖单品 关键字 https://textlink.simba.taobao.com/lk?_ksTS=1521018189664_5801&callback=jsonp5802&pid=619362_1007
+22.  https://tui.taobao.com/recommend?_ksTS=1521083519052_679&callback=jsonp680&appid=2807
+23.下部轮播图 https://ald.taobao.com/recommend2.htm?appId=20140506002%2C20140506001%2C201602246%2C07085%2C03014%2C201608180&_ksTS=1521176431243_94&callback=jsonp95
+24.第一个轮播图右侧图片 https://tce.taobao.com/api/mget.htm?callback=jsonpXctrl107&tce_sid=1947787&tce_vid=0&tid=&tab=&topic=&count=&env=online&cna=NZHUDw1%2FRzwCAbfmAyPZZ6MR
+25.第二个轮播图右侧图片 https://ecpm.tanx.com/ex?i=mm_12852562_1778064_48868196&cb=jsonp_callback_30207&r=https%3A%2F%2Flogin.taobao.com%2Fmember%2Flogin.jhtml%3FredirectURL%3Dhttps%253A%252F%252Fwww.taobao.com%252F%253Fspm%253Da2107.1.1000340.1.4c6d11d9i5umCU&cg=a91eb53a3cd4b8290d2384ae1cab40f9&pvid=a35e9f749bcefe1455865e7f59c2412f&u=https%3A%2F%2Fwww.taobao.com%2F%3Fspm%3Da2107.1.1000340.1.1e1a11d9tANv41&psl=1&nk=37%2C53%2C67%2C117%2C54%2C68%2C50%2C65%2C37%2C53%2C67%2C117%2C53%2C70%2C67%2C54%2C37%2C53%2C67%2C117%2C55%2C70%2C49%2C56&sk=&refpid=&fp=1.Kdj3ACqaFmGr4fFnK3msNUxIqFrYKhKfvCJ_vjuLi6jP7W3SMToyTr.UTF-8.hu2lztSK_gBAtByID_hEI0DmqgiayA.Q.1ve0g77
