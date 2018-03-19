@@ -320,20 +320,20 @@ $(function() {
 	
 	//侧边导航
 	function floor(){
-		var $NavList = $(".floor");
-				var $ConList = $("#content>ul>li");
+		var $NavList = $(".nav_fixed>a");
+				var $ConList = $(".floor");
 				var flag = true;
 				if($(window).scrollTop()>(1000-300)){
-						$("#floorNav").fadeIn();
+						$(".nav_fixed").fadeIn();
 					}else{
-						$("#floorNav").fadeOut();
+						$(".nav_fixed").fadeOut();
 					}
 				$(document).scroll(function(){
 					if(flag){
 					if($(window).scrollTop()>(1000-300)){
-						$("#floorNav").fadeIn();
+						$(".nav_fixed").fadeIn();
 					}else{
-						$("#floorNav").fadeOut();
+						$(".nav_fixed").fadeOut();
 					}
 					
 					$ConList.each(function(index){
@@ -343,14 +343,14 @@ $(function() {
 						}
 					})
 					}
-					$("#floorNav>ul>li:not(:last)").click(function(){
+					$(".nav_fixed>a:not(:nth-last-child(3)").click(function(){
 						flag = false;
 						var index = $(this).index();
 						$("body,html").stop().animate({"scrollTop":$ConList.eq(index).offset().top},function(){
 							flag = true;
 						});
 					})
-					$("#floorNav>ul>li:last").click(function(){
+					$(".nav_fixed>a:nth-last-child(3)").click(function(){
 						$("body,html").stop().animate({"scrollTop":0});
 					})
 				});

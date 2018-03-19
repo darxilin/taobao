@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝网 - 淘！我喜欢</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img src="img/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png" /></a>
+			<div class="header_right">
+				<p><span>为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</span></p>
+				<a href="">"登录页面"改进建议</a>
+			</div>
+		</header>
+		<section>
+			<div class="login">
+			<div class="login_box">
+				<p>密码登录
+					<span id="msg_wrong">密码错误</span>
+				</p>
+				<p>
+					<label></label>
+					<input type="text" id="login_name"/>
+				</p>
+				<p>
+					<label></label>
+					<input type="password" id="login_password" />
+				</p>
+				<p id="login">登录</p>
+				<p>
+					<a href="">微博登录</a>
+					<a href="">支付宝登录</a>
+				</p>
+				<p>
+					<a href="regist.html">免费注册</a>
+					<a href="">忘记会员名</a>
+					<a href="">忘记密码</a>
+				</p>
+			</div>
+			</div>
+		</section>
+		<footer></footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/hong.js"></script>
+		<script src="js/login.js"></script>
+		<script>
+			$(function(){
+				$("footer").load("footer.html");
+			});
+		</script>
+	</body>
+</html>

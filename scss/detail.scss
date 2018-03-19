@@ -1,0 +1,123 @@
+@charset "utf-8";
+body,p,input,ul,li{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: "宋体";
+}
+
+.search_box{
+    width: 1350px;
+    margin: 0 auto;
+    overflow: hidden;
+    >img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: left;
+        
+    }
+    .search_input{
+        width: 811px;
+        height: 35px;
+        display: flex;
+        float: left;
+        margin: 30px 0 0 120px;
+        .search_left{
+            flex: 1;
+            display: flex;
+            border: 2px solid #FF5400;
+            .search_type{
+                width: 80px;
+                background: #F5F5F5;
+                position: relative;
+                &:hover{
+                    >span{
+                        display: block;
+                    }
+                }
+                >p{
+                    span{
+                        float: left;
+                        color: #666;
+                        height: 31px;
+                    }
+                    span:first-of-type{
+                        text-align: center;
+                        width: 60px;
+                        font-size: 12px;
+                        line-height: 31px;
+                    }
+                    span:nth-of-type(2){
+                        width: 20px;
+                        font-size: 16px;
+                        line-height: 40px;
+                    }
+                }
+                >span{
+                        position: absolute;
+                        display: none;
+                        text-align: center;
+                        left: 0;
+                        top: 100%;
+                        color: #666;
+                        width: 78px;
+                        font-size: 12px;
+                        line-height: 31px;
+                        border: 1px solid #F4F4F4;
+                        background: #fff;
+                    }
+            }
+            >input{
+                height: 31px;
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                text-indent: 10px;
+            }
+        }
+        .search_right{
+            width: 100px;
+            text-align: center;
+            background: #FF5400;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 35px;
+            color: #fff;
+        }
+    }
+}
+
+.content{
+    width: 1350px;
+    margin: 0 auto;
+    overflow: hidden;
+    .content_left{
+        width: 1070px;
+        float: left;
+        .content_select{
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 2px solid #FF5400;
+            >a{
+                float: left;
+                padding: 10px 20px;
+                font-size: 16px;
+                line-height: 16px;
+                color: #333;
+                &:hover{
+                    background: #FF5400;
+                    color: #fff;
+                }
+                &.click{
+                    background: #FF5400;
+                    color: #fff;
+                    
+                }
+            }
+            
+        }
+    }
+}
