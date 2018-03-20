@@ -6,20 +6,27 @@ body, p, input, ul, li {
 body {
   font-family: "宋体"; }
 
+.header_box {
+  width: 1350px !important; }
+
 .search_box {
+  background: #fff;
   width: 1350px;
   margin: 0 auto;
-  overflow: hidden; }
-  .search_box > img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    float: left; }
+  height: 80px; }
+  .search_box > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden; }
+    .search_box > a > img {
+      float: left; }
   .search_box .search_input {
     width: 811px;
     height: 35px;
     display: flex;
     float: left;
-    margin: 30px 0 0 120px; }
+    margin: 30px 0 0 115px; }
     .search_box .search_input .search_left {
       flex: 1;
       display: flex;
@@ -69,15 +76,20 @@ body {
       font-size: 16px;
       font-weight: 600;
       line-height: 35px;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
+      .search_box .search_input .search_right:hover {
+        background: #FC4200; }
 
 .content {
   width: 1350px;
   margin: 0 auto;
-  overflow: hidden; }
+  display: flex;
+  border-bottom: 2px solid #666;
+  margin-bottom: 20px;
+  justify-content: space-between; }
   .content .content_left {
-    width: 1070px;
-    float: left; }
+    width: 1070px; }
     .content .content_left .content_select {
       width: 100%;
       overflow: hidden;
@@ -94,5 +106,170 @@ body {
         .content .content_left .content_select > a.click {
           background: #FF5400;
           color: #fff; }
+    .content .content_left .content_list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .content .content_left .content_list .list_box {
+        margin-top: 20px;
+        width: 250px;
+        border: 1px solid #F5F5F5;
+        transition: all 0.4s linear; }
+        .content .content_left .content_list .list_box:hover {
+          border: 1px solid #FF5400; }
+        .content .content_left .content_list .list_box .img_box {
+          width: 100%;
+          height: 250px;
+          position: relative;
+          transition: all 0.4s linear; }
+          .content .content_left .content_list .list_box .img_box > a {
+            width: 100%;
+            height: 100%; }
+            .content .content_left .content_list .list_box .img_box > a > img {
+              width: 100%;
+              height: 100%; }
+          .content .content_left .content_list .list_box .img_box > p {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 20px;
+            background: #FF5400;
+            opacity: 0;
+            transition: all 0.4s linear;
+            overflow: hidden; }
+            .content .content_left .content_list .list_box .img_box > p > span {
+              font-size: 12px;
+              color: #fff;
+              height: 100%;
+              float: left;
+              width: 50%;
+              text-align: center;
+              line-height: 20px; }
+          .content .content_left .content_list .list_box .img_box:hover > p {
+            opacity: .8; }
+        .content .content_left .content_list .list_box > p {
+          padding: 0 10px; }
+        .content .content_left .content_list .list_box > p:nth-of-type(1), .content .content_left .content_list .content_fenye.list_box > p:nth-of-type(3) {
+          margin-top: 5px;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden; }
+          .content .content_left .content_list .list_box > p:nth-of-type(1) > span:first-of-type, .content .content_left .content_list .content_fenye.list_box > p:nth-of-type(3) > span:first-of-type {
+            font-size: 16px;
+            font-weight: 700;
+            float: left;
+            color: #FF5400;
+            font-family: "微软雅黑"; }
+          .content .content_left .content_list .list_box > p:nth-of-type(1) > span:last-of-type, .content .content_left .content_list .content_fenye.list_box > p:nth-of-type(3) > span:last-of-type {
+            font-size: 12px;
+            float: right;
+            color: #999;
+            font-family: "微软雅黑"; }
+        .content .content_left .content_list .list_box > p:nth-of-type(2) {
+          height: 34px; }
+          .content .content_left .content_list .list_box > p:nth-of-type(2) > a {
+            line-height: 17px;
+            font-size: 12px;
+            color: #666; }
+            .content .content_left .content_list .list_box > p:nth-of-type(2) > a:hover {
+              color: #FF5400;
+              text-decoration: underline; }
+        .content .content_left .content_list .list_box > p:nth-of-type(3) {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          height: 20px; }
+          .content .content_left .content_list .list_box > p:nth-of-type(3) > a {
+            float: left;
+            line-height: 20px;
+            font-size: 12px;
+            color: #999;
+            text-decoration: underline; }
+            .content .content_left .content_list .list_box > p:nth-of-type(3) > a:hover {
+              color: #FF5400; }
+          .content .content_left .content_list .list_box > p:nth-of-type(3) > span {
+            float: right;
+            line-height: 20px;
+            font-size: 12px;
+            color: #999; }
+    .content .content_left .content_fenye {
+      width: 550px;
+      margin: 20px auto;
+      height: 30px;
+      overflow: hidden; }
+      .content .content_left .content_fenye > p.disable {
+        color: #F4F4F4 !important; }
+        .content .content_left .content_fenye > p.disable:hover {
+          color: #F4F4F4;
+          border: 1px solid #F4F4F4 !important; }
+      .content .content_left .content_fenye > p:nth-of-type(1), .content .content_left .content_fenye > p:nth-of-type(3) {
+        cursor: pointer;
+        float: left;
+        width: 80px;
+        height: 28px;
+        border: 1px solid #F4F4F4;
+        color: #666;
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px; }
+        .content .content_left .content_fenye > p:nth-of-type(1):hover, .content .content_left .content_fenye > p:hover:nth-of-type(3) {
+          color: #FF5400;
+          border: 1px solid #FF5400; }
+      .content .content_left .content_fenye > p:nth-of-type(2) {
+        margin-left: 10px;
+        float: left;
+        height: 100%;
+        overflow: hidden; }
+        .content .content_left .content_fenye > p:nth-of-type(2) > a {
+          display: block;
+          float: left;
+          width: 29px;
+          height: 28px;
+          color: #666;
+          text-align: center;
+          font-size: 12px;
+          line-height: 28px;
+          border: 1px solid #F4F4F4;
+          border-left: 1px solid transparent; }
+          .content .content_left .content_fenye > p:nth-of-type(2) > a:first-of-type {
+            border-left: 1px solid #F4F4F4; }
+          .content .content_left .content_fenye > p:nth-of-type(2) > a:hover {
+            border: 1px solid #FF5400;
+            color: #FF5400; }
+          .content .content_left .content_fenye > p:nth-of-type(2) > a.select {
+            background: #FF5400;
+            color: #fff;
+            border: 1px solid #FF5400; }
+      .content .content_left .content_fenye > span {
+        float: left;
+        line-height: 30px;
+        font-size: 12px;
+        color: #666; }
+      .content .content_left .content_fenye > p:nth-of-type(4) {
+        margin-left: 10px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        float: left; }
+        .content .content_left .content_fenye > p:nth-of-type(4) > input {
+          border: 1px solid #F4F4F4;
+          height: 15px;
+          line-height: 15px;
+          font-size: 12px;
+          width: 30px; }
+        .content .content_left .content_fenye > p:nth-of-type(4) > span:last-of-type {
+          padding: 5px 8px;
+          border: 1px solid #F4F4F4; }
+          .content .content_left .content_fenye > p:nth-of-type(4) > span:last-of-type:hover {
+            color: #FF5400;
+            border: 1px solid #FF5400; }
+  .content .content_right {
+    width: 270px; }
+    .content .content_right .ad_box {
+      width: 268;
+      height: 270px;
+      margin-top: 20px;
+      border: 1px solid #F4F4F4; }
 
 /*# sourceMappingURL=detail.css.map */

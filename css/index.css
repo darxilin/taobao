@@ -85,6 +85,7 @@ header {
               .search_wrap .search .search_box .search_search .search_left .search_result > li:hover {
                 background: #F5F5F5; }
         .search_wrap .search .search_box .search_search .search_btn {
+          cursor: pointer;
           width: 74px;
           height: 40px;
           background: #ff5600;

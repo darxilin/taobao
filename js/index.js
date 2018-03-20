@@ -1,4 +1,17 @@
 $(function() {
+	/*var wait = function() {
+		var def = $.Deferred();
+		var task = function() {
+			$("header").load("header.html");
+			$("footer").load("footer.html");
+			def.resolve();
+		}
+		setTimeout(task, 0);
+		return def;
+	}
+
+	$.when(wait()).done(function() {});*/
+	
 	getJson("https://tce.alicdn.com/api/data.htm?callback=?&ids=175785", web_nav);
 	//header网站导航
 	function web_nav(data) {
@@ -356,6 +369,34 @@ $(function() {
 				});
 	}
 	floor();
+	
+	//点击搜索跳转页面
+	$(".search_btn").click(function(){
+		var search = $("#search_content").val();
+		if(search){
+			location.href ="detail.html?q="+ encodeURIComponent(search);
+		}else{
+			$("#search_content").attr("placeholder","请输入想要搜索的内容");
+		}
+	});
+	
+	//判断是否已经登录
+	$("header").load("header.html",function(){
+		
+	
+		if(getCookie("user_online")) {
+	var user = getCookie("user_online");
+	$(".person_msg").text("Hi!" + user);
+	$(".touxiang").children().first().attr("href", "cart.html");
+	$(".person_fun>a").first().attr("href", "cart.html").text("购物车").next().text("注销");
+	$(".header_left>ul>li").eq(1).children().first().attr("href", "cart.html").text(user);
+	$(".person_fun>a").eq(1).click(function() {
+		removeCookie("user_online");
+		location.href = "index.html";
+	});
+}
+});
+	
 
 
 

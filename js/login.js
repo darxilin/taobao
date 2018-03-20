@@ -9,21 +9,7 @@ $(function() {
 			wrong.text("密码不能为空！").show();
 		} else {
 			wrong.hide();
-			/*$.ajax({
-				type: "post",
-				url: "php/jiekou.php",
-				data: {
-					name: name,
-					pass: pass
-				},
-				success: function(msg) {
-					if(msg == 1) {
-						location.href = 'index.html';
-					} else {
-						wrong.text("用户名或密码错误！").show();
-					}
-				}
-			});*/
+			
 			//var data = {user:{pass:pass,cart:{id:num}}};
 			if(getCookie("user")){
 				var obj = JSON.parse(getCookie("user"));
