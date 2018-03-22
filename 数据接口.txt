@@ -38,3 +38,8 @@
 31.https://aldcdn.tmall.com/recommend.htm?itemId=559017773532&categoryId=1512&sellerId=1677335387&shopId=105089828&brandId=280928896&refer=https%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D559378766802%26ali_refid%3Da3_430582_1006%3A1110041638%3AN%3A%25E5%258A%25AA%25E6%25AF%2594%25E4%25BA%259A%3Ab05aa61c96d3a61394d59ccc0ed0ee26%26ali_trackid%3D1_b05aa61c96d3a61394d59ccc0ed0ee26%26sku_properties%3D5919063%3A6536025%3B12304035%3A3222911%3B122216431%3A27772&brandSiteId=0&rn=&appId=03054&isVitual3C=false&isMiao=false&count=12&callback=jsonpAld03054
 
 商品数据 https://detailskip.taobao.com/service/getData/1/p1/item/detail/sib.htm?itemId=45149131332&sellerId=771218338&modules=dynStock,qrcode,viewer,price,duty,xmpPromotion,delivery,upp,activity,fqg,zjys,couponActivity,soldQuantity,originalPrice,tradeContract&callback=onSibRequestSuccess
+
+详情页价格数据 https://detailskip.taobao.com/service/getData/1/p1/item/detail/sib.htm?itemId=45149131332&sellerId=771218338&modules=dynStock,qrcode,viewer,price,duty,xmpPromotion,delivery,upp,activity,fqg,zjys,couponActivity,soldQuantity,originalPrice,tradeContract&callback=onSibRequestSuccess
+
+
+搜索框下 关键字 https://textlink.simba.taobao.com/?name=tbhs&cna=0ebOEXlQT1gCAX1QlTSQ6%2FVm&nn=&count=13&pid=430266_1006&_ksTS=1521643059808_88&callback=jsonp89

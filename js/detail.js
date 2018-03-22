@@ -2,7 +2,7 @@ $(function() {
 	var wait = function() {
 		var def = $.Deferred();
 		var task = function() {
-			$("header").load("header.html");
+			//$("header").load("header.html");
 			$("footer").load("footer.html");
 			def.resolve();
 		}
@@ -29,7 +29,7 @@ $(function() {
 				var str = "";
 				var arr = data.mods.itemlist.data.auctions;
 				for(var i = 0; i < arr.length; i++) {
-					str += `<div class='list_box'><div class='img_box'><a href='${arr[i].detail_url}'><img src='${arr[i].pic_url}'/></a><p><span>找同款</span><span>找相似</span></p></div><p><span>￥${arr[i].view_price}</span><span>${arr[i].view_sales}</span></p><p><a href='${arr[i].detail_url}'>${arr[i].title}</a></p><p><a href='${arr[i].shopLink}'>${arr[i].nick}</a><span>${arr[i].item_loc}</span></p></div>`;
+					str += `<div class='list_box'><div class='img_box'><a href='detail_list.html?id=${arr[i].nid}'><img src='${arr[i].pic_url}'/></a><p><span>找同款</span><span>找相似</span></p></div><p><span>￥${arr[i].view_price}</span><span>${arr[i].view_sales}</span></p><p><a href='detail_list.html?id=${arr[i].nid}'>${arr[i].title}</a></p><p><a href='${arr[i].shopLink}'>${arr[i].nick}</a><span>${arr[i].item_loc}</span></p></div>`;
 				}
 				$(".content_list").html(str);
 				$(".pageToltle").text(function() {

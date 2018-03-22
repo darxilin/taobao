@@ -1,3 +1,199 @@
+@charset "UTF-8";
+p, ul, li, body, input {
+  padding: 0;
+  margin: 0; }
 
+.search_box {
+  background: #fff;
+  width: 1190px;
+  margin: 0 auto;
+  height: 80px; }
+  .search_box > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden; }
+    .search_box > a > img {
+      float: left; }
+  .search_box .search_input {
+    width: 811px;
+    height: 35px;
+    display: flex;
+    float: left;
+    margin: 30px 0 0 115px; }
+    .search_box .search_input .search_left {
+      flex: 1;
+      display: flex;
+      border: 2px solid #FF5400; }
+      .search_box .search_input .search_left .search_type {
+        width: 80px;
+        background: #F5F5F5;
+        position: relative; }
+        .search_box .search_input .search_left .search_type:hover > span {
+          display: block; }
+        .search_box .search_input .search_left .search_type > p span {
+          float: left;
+          color: #666;
+          height: 31px; }
+        .search_box .search_input .search_left .search_type > p span:first-of-type {
+          text-align: center;
+          width: 60px;
+          font-size: 12px;
+          line-height: 31px; }
+        .search_box .search_input .search_left .search_type > p span:nth-of-type(2) {
+          width: 20px;
+          font-size: 16px;
+          line-height: 40px; }
+        .search_box .search_input .search_left .search_type > span {
+          position: absolute;
+          display: none;
+          text-align: center;
+          left: 0;
+          top: 100%;
+          color: #666;
+          width: 78px;
+          font-size: 12px;
+          line-height: 31px;
+          border: 1px solid #F4F4F4;
+          background: #fff; }
+      .search_box .search_input .search_left > input {
+        height: 31px;
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        text-indent: 10px; }
+    .search_box .search_input .search_right {
+      width: 100px;
+      text-align: center;
+      background: #FF5400;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 35px;
+      color: #fff;
+      cursor: pointer; }
+      .search_box .search_input .search_right:hover {
+        background: #FC4200; }
+
+.cart_box {
+  width: 1190px;
+  margin: 20px auto; }
+  .cart_box .cart {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    line-height: 40px; }
+  .cart_box .cart_title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #666;
+    text-align: center; }
+    .cart_box .cart_title .checkbox {
+      float: left;
+      font-size: 14px;
+      width: 109px; }
+    .cart_box .cart_title > span:nth-of-type(1) {
+      height: 100%;
+      float: left;
+      width: 250px; }
+    .cart_box .cart_title > span:nth-of-type(2) {
+      height: 100%;
+      float: left;
+      width: 240px; }
+    .cart_box .cart_title > span:nth-of-type(3), .cart_box #cartList > li .cart_title > span:nth-of-type(4) {
+      height: 100%;
+      float: left;
+      width: 250px; }
+    .cart_box .cart_title > span:nth-of-type(4) {
+      height: 100%;
+      float: left;
+      width: 200px;
+      padding-left: 45px; }
+    .cart_box .cart_title > span:nth-of-type(5) {
+      height: 100%;
+      float: left;
+      width: 80px; }
+  .cart_box #cartList {
+    width: 100%; }
+    .cart_box #cartList > li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      background: #F4F4F4;
+      overflow: hidden; }
+      .cart_box #cartList > li > input:first-of-type {
+        padding-right: 100px; }
+      .cart_box #cartList > li span:nth-of-type(1) {
+        width: 200px;
+        line-height: 100px;
+        padding-left: 40px;
+        font-size: 16px;
+        font-weight: 700; }
+      .cart_box #cartList > li span:nth-of-type(2) {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "宋体";
+        color: #FF5400;
+        width: 50px;
+        text-align: center;
+        line-height: 100px; }
+      .cart_box #cartList > li span:nth-of-type(3), .cart_box #cartList > li span:nth-of-type(4) {
+        cursor: pointer;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #666;
+        border-radius: 50%; }
+      .cart_box #cartList > li input:nth-of-type(2) {
+        width: 60px;
+        text-align: center;
+        height: 30px;
+        outline: none; }
+      .cart_box #cartList > li span:nth-of-type(5) {
+        width: 100px;
+        font-family: "微软雅黑";
+        width: 100px;
+        font-size: 20px;
+        color: red;
+        text-align: center; }
+      .cart_box #cartList > li span:nth-of-type(6) {
+        cursor: pointer;
+        height: 30px;
+        text-align: center;
+        line-height: 30px; }
+  .cart_box .cart_jiesuan {
+    margin: 20px 0;
+    width: 100%;
+    overflow: hidden; }
+    .cart_box .cart_jiesuan .cart_tijiao {
+      cursor: pointer;
+      float: right;
+      height: 40px;
+      width: 100px;
+      background: #FF5400;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center; }
+      .cart_box .cart_jiesuan .cart_tijiao:hover {
+        background: #FC4200; }
+    .cart_box .cart_jiesuan .price_total {
+      float: right;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 25px;
+      font-family: "微软雅黑";
+      text-align: center;
+      color: #FC4200; }
 
 /*# sourceMappingURL=cart.css.map */
